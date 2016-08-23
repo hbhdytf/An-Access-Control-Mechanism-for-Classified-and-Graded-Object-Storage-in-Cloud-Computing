@@ -25,7 +25,7 @@ sudo apt-get install -y --force-yes curl gcc git-core memcached python-configobj
 	python-coverage python-dev python-nose python-setuptools \
 	python-simplejson python-xattr sqlite3 xfsprogs python-webob \
 	python-eventlet python-greenlet python-pastedeploy python-netifaces \
-	memcached
+	memcached  build-essential mysql-server python-mysqldb
 
 
 
@@ -35,7 +35,7 @@ sudo password swift
 #setup xfs for disk
 sudo  apt-get -y --force-yes install vsftpd 
 
-sudo dd if=/dev/zero of=/srv/swift-disk bs=1024 count=0 seek=1000000
+sudo dd if=/dev/zero of=/srv/swift-disk bs=1024 count=0 seek=5000000
 sudo mkfs.xfs -f -i size=1024 /srv/swift-disk
 echo "/srv/swift-disk /mnt/sdb1 xfs loop,noatime,nodiratime,nobarrier,logbufs=8 0 0" |sudo tee -a /etc/fstab
 
@@ -94,7 +94,7 @@ sudo easy_install pip
 #Install swift
 #git clone https://github.com/openstack/swift.git
 sudo chmod -R 755 swift 
-cd /home/sandy/swift/swift ; 
+cd ../swift/swift ; 
 sudo pip install -r requirements.txt
 sudo python setup.py develop; 
 cd -
@@ -102,7 +102,7 @@ cd -
 #Install swiftclient
 #git clone https://github.com/openstack/python-swiftclient.git
 sudo chmod -R 755 python-swiftclient 
-cd python-swiftclient; 
+cd ../swift/python-swiftclient; 
 sudo pip install -r requirements.txt
 sudo python setup.py install;
 cd ..
@@ -113,6 +113,7 @@ sudo sh remakerings
 sudo swift-init main start
 
 echo "Hi, SAIO is Finished......."
+
 
 
 
