@@ -12,6 +12,9 @@ File Encoding         : 65001
 
 Date: 2016-08-11 01:19:49
 */
+DROP DATABASE IF EXISTS auth;
+CREATE DATABASE auth;
+use auth;
 
 SET FOREIGN_KEY_CHECKS=0;
 
@@ -343,6 +346,7 @@ CREATE TABLE `TMeta` (
 -- ----------------------------
 -- Records of TMeta
 -- ----------------------------
+/*
 INSERT INTO `TMeta` VALUES ('1038161', '小酒窝', '7', '5', 'pad1', '2016-01-11 16:17:00', 'ytf/1.mp3', 'audio/mp3', '', '', '', '');
 INSERT INTO `TMeta` VALUES ('1038162', '小酒窝1', '7', '2', 'mobile', '2016-01-20 01:38:54', 'ytf1/2.wma', 'audio/mp3', '', '', '', '');
 INSERT INTO `TMeta` VALUES ('1038164', '铃声', '7', '4', 'mobile', '2016-01-20 01:58:47', 'zjj/iphone.mp3', 'audio/mp3', '', '', '', '');
@@ -383,7 +387,7 @@ INSERT INTO `TMeta` VALUES ('1038233', '0809curl', '5', '4', 'cloudms', '2016-08
 INSERT INTO `TMeta` VALUES ('1038244', '小酒窝', '5', '4', 'cloudms', '2016-08-09 08:07:10', 'zjj/0809.m4a', 'audio/mp3', '', '', '', '');
 INSERT INTO `TMeta` VALUES ('1038245', '080901', '5', '4', 'cloudms', '2016-08-09 08:08:32', 'zjj/080901.m4a', 'audio/mp3', '', '', '', '');
 INSERT INTO `TMeta` VALUES ('1038246', '080902', '5', '4', 'cloudms', '2016-08-09 08:10:21', 'zjj/080902.m4a', 'audio/mp3', '', '', '', '');
-
+*/
 -- ----------------------------
 -- Table structure for `TPolicy`
 -- ----------------------------

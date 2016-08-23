@@ -92,6 +92,7 @@ sudo service rsync restart
 sudo apt-get --force-yes -y install python-setuptools
 sudo easy_install pip
 
+cd "$( dirname "${BASH_SOURCE[0]}")"
 #Install swift
 #git clone https://github.com/openstack/swift.git
 sudo chmod -R 755 swift 
@@ -106,11 +107,15 @@ sudo chmod -R 755 python-swiftclient
 cd ../swift/python-swiftclient; 
 sudo pip install -r requirements.txt
 sudo python setup.py install;
-cd ..
+cd -
 
 #make ring and start server
-cd bin;
+cd ./bin;
 sudo sh remakerings
+cd -
+#sql script
+mysql -uroot -proot -e "source auth.sql" 
+
 sudo swift-init main start
 
 echo "Hi, SAIO is Finished......."
