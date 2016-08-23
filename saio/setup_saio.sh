@@ -16,6 +16,7 @@
 
 #change to bash location
 cd "$( dirname "${BASH_SOURCE[0]}")"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 #install indepency
 sudo apt-get install -y --force-yes python-software-properties
 # If you want install swift use deb package,enable it
@@ -92,7 +93,8 @@ sudo service rsync restart
 sudo apt-get --force-yes -y install python-setuptools
 sudo easy_install pip
 
-cd "$( dirname "${BASH_SOURCE[0]}")"
+cd $DIR
+#cd "$( dirname "${BASH_SOURCE[0]}")"
 #Install swift
 #git clone https://github.com/openstack/swift.git
 sudo chmod -R 755 swift 
