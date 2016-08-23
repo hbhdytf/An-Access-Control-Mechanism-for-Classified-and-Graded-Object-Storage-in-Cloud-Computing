@@ -14,7 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
+#change to bash location
+cd "$( dirname "${BASH_SOURCE[0]}")"
 #install indepency
 sudo apt-get install -y --force-yes python-software-properties
 # If you want install swift use deb package,enable it
