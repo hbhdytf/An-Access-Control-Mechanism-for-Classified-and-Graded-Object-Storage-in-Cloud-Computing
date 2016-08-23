@@ -1,0 +1,151 @@
+/home/sandy/swift/mac/mac/urls.py:8: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.frame). Pass the callable instead.
+  url(r'^main/$', 'blog.views.frame'),
+
+/home/sandy/swift/mac/mac/urls.py:9: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.test). Pass the callable instead.
+  url(r'^test/$', 'blog.views.test'),
+
+/home/sandy/swift/mac/mac/urls.py:10: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.info). Pass the callable instead.
+  url(r'info/$', 'blog.views.info'),
+
+/home/sandy/swift/mac/mac/urls.py:11: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.beginAddmeta). Pass the callable instead.
+  url(r'^addmeta.html$', 'blog.views.beginAddmeta'),
+
+/home/sandy/swift/mac/mac/urls.py:12: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.addmeta). Pass the callable instead.
+  url(r'^addmeta$', 'blog.views.addmeta'),
+
+/home/sandy/swift/mac/mac/urls.py:13: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.updatemeta). Pass the callable instead.
+  url(r'^updatemeta$', 'blog.views.updatemeta'),
+
+/home/sandy/swift/mac/mac/urls.py:14: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.delmByID). Pass the callable instead.
+  url(r'deletemeta/mtid=(\d+)/name=(\w+)/id=(\d+)$', 'blog.views.delmByID'),
+
+/home/sandy/swift/mac/mac/urls.py:15: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.showMid). Pass the callable instead.
+  url(r'showmid$', 'blog.views.showMid'),
+
+/home/sandy/swift/mac/mac/urls.py:16: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.showmeta). Pass the callable instead.
+  url(r'^meta/id=(\d+)/name=(\w+)', 'blog.views.showmeta'),
+
+/home/sandy/swift/mac/mac/urls.py:17: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.top). Pass the callable instead.
+  url(r'^top/$', 'blog.views.top'),
+
+/home/sandy/swift/mac/mac/urls.py:18: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.login). Pass the callable instead.
+  url(r'^$', 'blog.views.login'),
+
+/home/sandy/swift/mac/mac/urls.py:19: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.metaadd). Pass the callable instead.
+  url(r'^metaadd$', 'blog.views.metaadd'),
+
+/home/sandy/swift/mac/mac/urls.py:20: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got blog.views.gettoken). Pass the callable instead.
+  url(r'^gettoken', 'blog.views.gettoken'),
+
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+/home/sandy/swift/mac/mac/urls.py:21: RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances instead.
+  url(r'^admin/', include(admin.site.urls)),
+
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py:89: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got django.views.static.serve). Pass the callable instead.
+  t = url(prefix=prefix, *t)
+
+/home/sandy/swift/mac/mac/urls.py:26: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.showuserfield). Pass the callable instead.
+  url(r'^user_field', 'views.showuserfield'),
+
+/home/sandy/swift/mac/mac/urls.py:27: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.adduserfield). Pass the callable instead.
+  url(r'^addsefield/', 'views.adduserfield'),
+
+/home/sandy/swift/mac/mac/urls.py:28: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.delufrelation). Pass the callable instead.
+  url(r'^delufrelation/id=(\d+)$', 'views.delufrelation'),
+
+/home/sandy/swift/mac/mac/urls.py:29: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.showrelation). Pass the callable instead.
+  url(r'^showrelation/id=(\d+)$', 'views.showrelation'),
+
+/home/sandy/swift/mac/mac/urls.py:30: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.updateufrelation). Pass the callable instead.
+  url(r'^updateufrelation$', 'views.updateufrelation'),
+
+/home/sandy/swift/mac/mac/urls.py:31: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.showpolicy). Pass the callable instead.
+  url(r'^policy', 'views.showpolicy'),
+
+/home/sandy/swift/mac/mac/urls.py:32: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.addpolicy). Pass the callable instead.
+  url(r'^addpolicy', 'views.addpolicy'),
+
+/home/sandy/swift/mac/mac/urls.py:33: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.delpolicy). Pass the callable instead.
+  url(r'^delpolicy/id=(\d+)', 'views.delpolicy'),
+
+/home/sandy/swift/mac/mac/urls.py:34: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.showapolicy). Pass the callable instead.
+  url(r'^showapolicy/id=(\d+)', 'views.showapolicy'),
+
+/home/sandy/swift/mac/mac/urls.py:35: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.updatepolicy). Pass the callable instead.
+  url(r'^updatepolicy$', 'views.updatepolicy'),
+
+/home/sandy/swift/mac/mac/urls.py:35: RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances instead.
+  url(r'^updatepolicy$', 'views.updatepolicy'),
+
+/home/sandy/swift/mac/mac/urls.py:40: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.showuser). Pass the callable instead.
+  url(r'^user/$', 'views.showuser'),
+
+/home/sandy/swift/mac/mac/urls.py:41: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.beginAdduser). Pass the callable instead.
+  url(r'^adduser.html$', 'views.beginAdduser'),
+
+/home/sandy/swift/mac/mac/urls.py:42: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.adduser). Pass the callable instead.
+  url(r'^adduser$', 'views.adduser'),
+
+/home/sandy/swift/mac/mac/urls.py:43: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.deluByID). Pass the callable instead.
+  url(r'deleteuser$', 'views.deluByID'),
+
+/home/sandy/swift/mac/mac/urls.py:44: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.showUid). Pass the callable instead.
+  url(r'showuid$', 'views.showUid'),
+
+/home/sandy/swift/mac/mac/urls.py:45: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.updateuser). Pass the callable instead.
+  url(r'^updateuser$', 'views.updateuser'),
+
+/home/sandy/swift/mac/mac/urls.py:45: RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances instead.
+  url(r'^updateuser$', 'views.updateuser'),
+
+/home/sandy/swift/mac/mac/urls.py:50: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.showfield). Pass the callable instead.
+  url(r'^field/', 'views.showfield'),
+
+/home/sandy/swift/mac/mac/urls.py:51: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.fd). Pass the callable instead.
+  url(r'^showfields$', 'views.fd'),
+
+/home/sandy/swift/mac/mac/urls.py:52: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.addfield). Pass the callable instead.
+  url(r'^addfield$', 'views.addfield'),
+
+/home/sandy/swift/mac/mac/urls.py:53: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.delfield). Pass the callable instead.
+  url(r'^delfield/id=(\d+)$', 'views.delfield'),
+
+/home/sandy/swift/mac/mac/urls.py:54: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.showfid). Pass the callable instead.
+  url(r'^showfieldid/id=(\d+)$', 'views.showfid'),
+
+/home/sandy/swift/mac/mac/urls.py:55: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.updatefield). Pass the callable instead.
+  url(r'^updatefield$', 'views.updatefield'),
+
+/home/sandy/swift/mac/mac/urls.py:56: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.showclass). Pass the callable instead.
+  url(r'^class/', 'views.showclass'),
+
+/home/sandy/swift/mac/mac/urls.py:57: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.cs). Pass the callable instead.
+  url(r'^showclasses$', 'views.cs'),
+
+/home/sandy/swift/mac/mac/urls.py:58: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.addclass). Pass the callable instead.
+  url(r'^addclass$', 'views.addclass'),
+
+/home/sandy/swift/mac/mac/urls.py:59: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.showcid). Pass the callable instead.
+  url(r'^showclassid/id=(\d+)$', 'views.showcid'),
+
+/home/sandy/swift/mac/mac/urls.py:60: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.updateclass). Pass the callable instead.
+  url(r'^updateclass$', 'views.updateclass'),
+
+/home/sandy/swift/mac/mac/urls.py:61: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got views.delclass). Pass the callable instead.
+  url(r'^delclass/id=(\d+)$', 'views.delclass'),
+
+/home/sandy/swift/mac/mac/urls.py:61: RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances instead.
+  url(r'^delclass/id=(\d+)$', 'views.delclass'),
+
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have unapplied migrations; your app may not work properly until they are applied.
+Run 'python manage.py migrate' to apply them.
+August 15, 2016 - 07:28:21
+Django version 1.9.1, using settings 'mac.settings'
+Starting development server at http://0.0.0.0:8888/
+Quit the server with CONTROL-C.
