@@ -15,8 +15,8 @@
 # limitations under the License.
 
 #change to bash location
-cd "$( dirname "${BASH_SOURCE[0]}")"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $DIR
 #install indepency
 sudo apt-get install -y --force-yes python-software-properties
 # If you want install swift use deb package,enable it
