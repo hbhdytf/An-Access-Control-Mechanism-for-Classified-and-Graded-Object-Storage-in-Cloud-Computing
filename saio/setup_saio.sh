@@ -118,8 +118,12 @@ mysql -uroot -proot -e "source auth.sql"
 
 sudo swift-init main start
 
-echo "Hi, SAIO is Finished......."
+cd ../swift/mac
+sudo pip install -r requirements.txt
+python manage.py runserver 0.0.0.0:8888 &
+cd -
 
+echo "Hi, SAIO is Finished......."
 
 
 
