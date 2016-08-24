@@ -26,7 +26,7 @@ sudo apt-get install -y --force-yes curl gcc git-core memcached python-configobj
 	python-coverage python-dev python-nose python-setuptools \
 	python-simplejson python-xattr sqlite3 xfsprogs python-webob \
 	python-eventlet python-greenlet python-pastedeploy python-netifaces \
-	memcached  build-essential mysql-server python-mysqldb
+	memcached  build-essential mysql-server python-mysqldb python3-swiftclient
 
 
 
