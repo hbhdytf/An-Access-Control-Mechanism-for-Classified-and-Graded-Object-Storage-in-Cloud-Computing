@@ -64,15 +64,15 @@ do
 done
 
 #sudo mkdir -p /var/run/swift
-#sudo  chown -R swift:swift /etc/swift /srv/1/ /srv/2/ /srv/3/ /srv/4/ /var/run/swift
+sudo  chown -R swift:swift /etc/swift /srv/1/ /srv/2/ /srv/3/ /srv/4/ /var/run/swift
 
-#echo -e "mkdir /var/run/swift \\n chown swift:swift /var/run/swift" |sudo tee -a /etc/rc.local  
+echo -e "mkdir /var/run/swift \\n chown swift:swift /var/run/swift" |sudo tee -a /etc/rc.local  
 
-#if [ -e /home/swift/.bashrc ]
-#then 
-#   echo -e "export SWIFT_TEST_CONFIG_FILE=/etc/swift/test.conf  \\n export PATH=${PATH}:~/bin" |sudo tee -a /home/swift/.bashrc 
-#   sudo source ~/.bashrc
-#fi
+if [ -e /home/swift/.bashrc ]
+then 
+   echo -e "export SWIFT_TEST_CONFIG_FILE=/etc/swift/test.conf  \\n export PATH=${PATH}:~/bin" |sudo tee -a /home/swift/.bashrc 
+   sudo source ~/.bashrc
+fi
 
 
 #configure swift and related conf
